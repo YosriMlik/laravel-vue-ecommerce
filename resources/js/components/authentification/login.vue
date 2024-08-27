@@ -45,7 +45,8 @@ import { useRouter } from 'vue-router';
 const router = useRouter()
 let user = {}
 
-const handleLogin = async () => {
+const handleLogin = async (event) => {
+    event.preventDefault();
     console.log("handleLogin");
     axios.post('http://localhost:8000/api/login/', user)
     .then((response) => {

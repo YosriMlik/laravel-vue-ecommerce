@@ -56,14 +56,19 @@ import { useRouter } from 'vue-router';
 const router = useRouter()
 let user = {}
 
-const handleSubmit = async () => {
-    axios.post('http://localhost:8000/api/register/', user)
-    .then(response => {
-        console.log(response)
-        router.replace({ name: 'login' })
-    })
-    .catch(err => { console.log(err); alert(err) })
+const handleSubmit = async (event) => {
+    event.preventDefault();  // Prevent the default form submission behavior
+    try {
+        const response = await axios.post('http://localhost:8000/api/register/', user);
+        console.log(response);
+        alert("Registered Successfully !")
+        router.push("/login");  // Uncomment this line if you want to redirect after successful submission
+    } catch (err) {
+        console.log(err);
+        alert(err.message);
+    }
 }
+
 </script>
 <style scoped>
 .marge {

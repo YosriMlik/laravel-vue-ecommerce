@@ -49,7 +49,7 @@
     "src": "resources/js/1_TZ7eIB3cdZHCqo4iQB0jVg.jpg"
   },
   "resources/js/app.css": {
-    "file": "assets/app-17753dd8.css",
+    "file": "assets/app-8e9175eb.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -67,9 +67,9 @@
       "assets/Inter-italic.var-d1401419.woff2"
     ],
     "css": [
-      "assets/app-17753dd8.css"
+      "assets/app-8e9175eb.css"
     ],
-    "file": "assets/app-859927fb.js",
+    "file": "assets/app-d0d182bf.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
